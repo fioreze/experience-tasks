@@ -1,0 +1,164 @@
+body,
+html {
+        margin: 0;
+        /* Remove qualquer margem ao redor do corpo e do elemento HTML. */
+        padding: 0;
+        /* Remove qualquer padding interno do corpo e do elemento HTML. */
+        height: 100%;
+        /* Define a altura do corpo e do HTML para cobrir toda a altura da janela do navegador. */
+        font-family: Arial, sans-serif;
+        /* Define Arial como a fonte principal, com sans-serif como fallback. */
+        background-color: #f4f4f4;
+        /* Define um fundo claro para a página, proporcionando um design limpo e moderno. */
+}
+
+nav {
+        background-color: #333;
+        /* Cor de fundo cinza escuro para a barra de navegação. */
+        color: white;
+        /* Define o texto dentro da navbar para branco para contraste. */
+        display: flex;
+        /* Usa flexbox para alinhar os elementos dentro da navbar. */
+        justify-content: space-between;
+        /* Distribui o espaço entre e ao redor dos itens de forma uniforme. */
+        align-items: center;
+        /* Centraliza os itens verticalmente dentro da navbar. */
+        padding: 20px 20px;
+        /* Adiciona padding uniforme dentro da navbar para aumentar a área de clique e conforto. */
+}
+
+nav .nav-links ul {
+        list-style-type: none;
+        /* Remove os marcadores de lista para uma aparência limpa. */
+        padding: 0;
+        /* Remove o padding padrão da lista. */
+        margin: 0;
+        /* Remove a margem padrão da lista. */
+        display: flex;
+        /* Aplica flexbox para alinhar horizontalmente os itens da lista. */
+        align-items: center;
+        /* Centraliza os itens da lista verticalmente. */
+}
+
+nav .nav-links ul li {
+        margin-right: 20px;
+        /* Adiciona margem à direita para cada item da lista para espaçamento. */
+}
+
+nav .nav-links ul li a,
+nav .nav-login a {
+        color: white;
+        /* Define a cor dos links para branco para manter o contraste. */
+        text-decoration: none;
+        /* Remove o sublinhado dos links para uma aparência mais limpa. */
+        padding: 10px 15px;
+        /* Adiciona padding aos links para torná-los mais clicáveis e confortáveis. */
+        transition: background-color 0.3s, color 0.3s;
+        /* Adiciona uma transição suave para mudanças de cor de fundo e texto ao passar o mouse. */
+}
+
+nav .nav-login {
+        background-color: #555;
+        /* Cor de fundo mais clara para destacar a área de login. */
+        border-radius: 5px;
+        /* Adiciona bordas arredondadas para um visual mais suave e moderno. */
+}
+
+nav .nav-links ul li a:hover,
+nav .nav-login a:hover {
+        background-color: #555;
+        /* Altera a cor de fundo para cinza médio ao passar o mouse. */
+        color: #fff;
+        /* Mantém a cor do texto em branco para contraste. */
+        border-radius: 5px;
+        /* Mantém as bordas arredondadas no hover para consistência. */
+}
+
+.secao {
+        padding: 20px;
+        /* Adiciona padding para espaço interno ao redor do conteúdo das seções. */
+        border: 1px solid #ccc;
+        /* Adiciona uma borda sutil para definir visualmente cada seção. */
+        margin-top: 10px;
+        /* Adiciona uma margem superior para separar as seções visualmente. */
+        background-color: #fff;
+        /* Define a cor de fundo das seções para branco, oferecendo uma base limpa para o conteúdo. */
+        height: 80vh;
+        /* Define a altura das seções para 80% da altura da viewport, criando um efeito de seção completa. */
+}
+
+footer {
+        position: fixed;
+        /* Fixa o footer na parte inferior da janela do navegador. */
+        bottom: 0;
+        /* Alinha o footer na parte inferior da página. */
+        width: 100%;
+        /* Define a largura do footer para abranger toda a largura da janela. */
+        background-color: #333;
+        /* Define a cor de fundo do footer para um cinza escuro, correspondendo à navbar. */
+        color: white;
+        /* Define a cor do texto para branco para contraste. */
+        text-align: center;
+        /* Centraliza o texto dentro do footer. */
+        padding: 10px 0;
+        /* Adiciona padding vertical para uma altura adequada e confortável do footer. */
+}
+
+form {
+        padding: 20px;
+        /* Adiciona padding interno para o formulário de login para conforto e espaço. */
+        background-color: white;
+        /* Define a cor de fundo do formulário para branco, destacando-o na página. */
+        border-radius: 8px;
+        /* Bordas arredondadas para um visual moderno e suave. */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Adiciona uma sombra sutil para dar profundidade ao formulário. */
+        width: 300px;
+        /* Define a largura do formulário para garantir que todos os campos sejam visualmente acessíveis. */
+        margin: auto;
+        /* Centraliza o formulário horizontalmente na página. */
+        display: block;
+        /* Garante que o formulário seja tratado como um bloco para propriedades de layout adequadas. */
+        margin-top: 100px;
+        /* Espaçamento superior para centralizar verticalmente o formulário na viewport. */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="checkbox"],
+input[type="radio"],
+button {
+        width: 90%;
+        /* Define a largura de todos os campos de entrada para preencher a largura disponível no formulário. */
+        padding: 8px;
+        /* Adiciona padding para conforto ao digitar ou interagir com os campos. */
+        margin-bottom: 10px;
+        /* Adiciona margem inferior para separar os campos dentro do formulário. */
+        border: 1px solid #ccc;
+        /* Define uma borda sutil para delinear os campos. */
+        border-radius: 4px;
+        /* Bordas arredondadas para um visual consistente e moderno. */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+        width: auto;
+        /* Restaura a largura padrão para checkboxes e rádio buttons para não distorcer seus estilos nativos. */
+}
+
+button {
+        background-color: #333;
+        /* Cor de fundo para o botão de envio, consistente com a estilização geral do site. */
+        color: white;
+        /* Cor do texto do botão para alto contraste e visibilidade. */
+        border: none;
+        /* Remove a borda padrão do botão para um visual mais limpo. */
+        cursor: pointer;
+        /* Muda o cursor para indicar que o botão é clicável. */
+}
+
+button:hover {
+        background-color: #555;
+        /* Altera a cor de fundo do botão ao passar o mouse para oferecer feedback visual. */
+}
